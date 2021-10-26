@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Atividade01.MainPage">
+
+    <StackLayout>
+        <TableView Intent="Form">
+            <TableRoot>
+                <TableSection Title="Cadastro de Livros">
+                    <EntryCell x:Name="TxtCodigo"
+                           Label="Codigo" 
+                           Placeholder="Digite o código" 
+                           Keyboard="Default"/>
+                    <EntryCell x:Name="TxtTitulo"
+                           Label="Titulo" 
+                           Placeholder="Digite o Teste" 
+                           Keyboard="Text"/>
+                    <EntryCell x:Name="TxtAutor"
+                           Label="Autor" 
+                           Placeholder="Digite o Autor" 
+                           Keyboard="Text"/>
+                    <EntryCell x:Name="TxtEditora"
+                           Label="Editora" 
+                           Placeholder="Digite a Editora" 
+                           Keyboard="Text"/>
+                    <EntryCell x:Name="TxtAno"
+                           Label="Ano" 
+                           Placeholder="Digite o ano" 
+                           Keyboard="Numeric"/>
+                </TableSection>
+            </TableRoot>
+        </TableView>
+        <Button Text="Inserir" Clicked="Button_Clicked" />
+        
+        <Button Text="Apresentar conteúdo" 
+                    Clicked="bt2" Margin="20" Padding="20"
+                    FontAttributes="Bold" FontSize="20" />
+        <Button Text="Verificar" Clicked="Button2_Clicked" />
+    </StackLayout>
+
+</ContentPage>
