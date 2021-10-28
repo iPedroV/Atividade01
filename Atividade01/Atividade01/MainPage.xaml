@@ -33,12 +33,12 @@
                 </TableSection>
             </TableRoot>
         </TableView>
-        <Button Text="Inserir" Clicked="Button_Clicked" />
+        
         
         <Button Text="Apresentar conteúdo" 
                     Clicked="bt2" Margin="20" Padding="20"
                     FontAttributes="Bold" FontSize="20" />
-        <Button Text="Verificar" Clicked="Button2_Clicked" />
+      
     </StackLayout>
 
 </ContentPage>
